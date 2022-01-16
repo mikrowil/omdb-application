@@ -3,6 +3,7 @@ import styles from './SearchScreen.module.css'
 import {TextField, Typography} from '@mui/material'
 import omdbApi from "../../api/omdbApi";
 import MoviesContainer from "../../components/MoviesContainer/MoviesContainer";
+import Title from "../../components/Title/Title";
 
 const SearchScreen = () => {
     const [searchTerm, setSearchTerm] = useState('')
@@ -19,9 +20,7 @@ const SearchScreen = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.title}>
-                Search Movies
-            </div>
+            <Title title={"Search Movies"}/>
 
             <TextField
                 label="Search"

@@ -1,0 +1,14 @@
+.container{
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 4%;
+
+    text-align: center;
+}
+
+.title{
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 3px;
+    margin : 3% 0;
+}

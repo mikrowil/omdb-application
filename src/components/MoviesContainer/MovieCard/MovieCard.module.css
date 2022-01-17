@@ -1,4 +1,4 @@
-.movieCard{
+.movieCard {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -11,29 +11,30 @@
 
     box-shadow: 5px 5px 10px #262424;
 }
-.movieCardImage{
+
+.movieCardImage {
     background-size: cover;
-    flex:4;
+    flex: 4;
 }
 
-.movieCardDetails{
+.movieCardDetails {
     flex: 1;
     padding: 2%;
     background: rgb(219, 226, 233);
 
 }
 
-.movieCardTitle{
+.movieCardTitle {
     font-size: 1.2rem;
     margin: 2%;
 }
 
-.movieCardYear{
+.movieCardYear {
     font-style: italic;
     margin: 2%;
 }
 
-.movieCardButton{
-    padding:2%;
+.movieCardButton {
+    padding: 2%;
     margin: 2%;
 }

@@ -2,7 +2,15 @@ import React from "react";
 import styles from './MovieCard.module.css'
 import {Button} from "@mui/material";
 
-const MovieCard = ({movie}) => {
+
+/**
+ *  The MovieCard component is used to display the data of a movie, tv show or book
+ * @param movie - Movie, tv show or book to be displayed
+ * @param handleButtonClick - Shows more details about the selected card
+ * @returns {JSX.Element} - MovieCard component
+ * @constructor
+ */
+const MovieCard = ({movie, handleButtonClick}) => {
     return (
         <div className={styles.movieCard}>
             <div className={styles.movieCardImage} style={{backgroundImage: `url(${movie.Poster})`}}/>
@@ -16,6 +24,9 @@ const MovieCard = ({movie}) => {
                 <Button
                     className={styles.movieCardButton}
                     variant={"contained"}
+                    onClick={() => {
+                        handleButtonClick(movie.imdbID)
+                    }}
                 >
                     Show Details
                 </Button>

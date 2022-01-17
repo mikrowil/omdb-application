@@ -1,10 +1,15 @@
 import React from "react";
 import styles from './Title.module.css'
 
-const Title = () =>{
+/**
+ * @param {title} - The text to display
+ * @returns {JSX.Element} - Title component
+ * @constructor
+ */
+const Title = ({title}) =>{
     return(
         <div className={styles.title}>
-            Search Movies
+            {title}
         </div>
     )
 }

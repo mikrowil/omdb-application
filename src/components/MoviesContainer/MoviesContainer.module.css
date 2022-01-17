@@ -1,4 +1,4 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
@@ -7,22 +7,22 @@
     margin: 0 auto;
 }
 
-@media all and (max-width: 1430px){
-    .container{
+@media all and (max-width: 1430px) {
+    .container {
         grid-template-columns: auto auto auto;
 
     }
 }
 
-@media all and (max-width: 1065px){
-    .container{
+@media all and (max-width: 1065px) {
+    .container {
         grid-template-columns: auto auto;
 
     }
 }
 
-@media all and (max-width: 699px){
-    .container{
+@media all and (max-width: 699px) {
+    .container {
         grid-template-columns: auto;
         width: 100%;
     }
